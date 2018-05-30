@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Blood</string>
+    <string name="action_settings">Settings</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="default_low">90</string>
+    <string name="default_high">120</string>
+    <string name="title_activity_main2">MainActivity</string>
+</resources>
