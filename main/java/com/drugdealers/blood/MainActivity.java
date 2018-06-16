@@ -1,5 +1,6 @@
 package com.drugdealers.blood;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,6 +16,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     Button mSubmit;
+    Button mViewAll;
     List<Record> mData;
     TextView mHigh;
     TextView mLow;
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
             }
         });
 
@@ -46,6 +49,13 @@ public class MainActivity extends AppCompatActivity {
 
         mHigh = findViewById(R.id.choose_high);
         mLow = findViewById(R.id.choose_low);
+
+        mViewAll = findViewById(R.id.view_all);
+        mViewAll.setOnClickListener( v -> {
+            Intent i = new Intent(this, RecordListActivity.class);
+            startActivity(i);
+
+        });
 
 
     }
