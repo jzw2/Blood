@@ -1,5 +1,8 @@
 package com.drugdealers.blood;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by johnwang on 5/30/18.
  */
@@ -7,6 +10,16 @@ package com.drugdealers.blood;
 public class Record {
     private int high;
     private int low;
+
+    private static List<Record> single;
+
+    public static List<Record> get() {
+        if (single == null) {
+            single = new ArrayList<>();
+        }
+
+        return single;
+    }
 
 
     public Record(int high, int low) {

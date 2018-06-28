@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mData = new ArrayList<>();
+        mData = Record.get();
 
 
         mSubmit = findViewById(R.id.submit);

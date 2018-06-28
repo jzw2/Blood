@@ -6,4 +6,6 @@
     <string name="default_low">90</string>
     <string name="default_high">120</string>
     <string name="title_activity_main2">MainActivity</string>
+    <string name="title_activity_list_reconds">ListReconds</string>
+    <string name="title_activity_record_list">RecordListActivity</string>
 </resources>
